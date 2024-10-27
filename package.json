@@ -45,7 +45,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/ndb77/NebraskaNeurologicalSociety.git",
+  "homepage": "https://ndb77.github.io/NebraskaNeurologicalSociety/",
   "devDependencies": {
     "gh-pages": "^6.2.0"
   }
