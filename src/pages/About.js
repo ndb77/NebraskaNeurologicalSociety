@@ -31,8 +31,8 @@ function About() {
               <li><strong>Morning (Clinics):</strong> Neurosurgery clinic exposure as planned.</li>
               <li><strong>Afternoon (Case Identification and AI Integration):</strong>
                 <ul>
-                  <li><strong>AI Tool Integration:</strong> Introduce residents to AI tools such as <a href="#aidoc-link">Aidoc</a> and <a href="#zebra-medical-vision-link">Zebra Medical Vision</a> for MRI analysis. After selecting a case in the clinic that involves MRI imaging (e.g., a patient with a brain tumor or hydrocephalus), residents will use the AI tools to analyze the MRI and compare the results with manual interpretations. They will be encouraged to explore how AI models help identify brain anomalies and expedite urgent case reviews.</li>
-                  <li><strong>Hands-on Training:</strong> Residents will perform MRI reviews using Aidoc and Zebra Medical Vision to detect abnormalities such as brain tumors, mass effects, or structural issues. They will document how AI flagged key findings compared to manual analysis.</li>
+                  <li><strong>AI Tool Integration:</strong> Introduce residents to AI tools such as <strong>Aidoc</strong> and <strong>Zebra Medical Vision</strong> for MRI analysis. After selecting a case in the clinic that involves MRI imaging (e.g., a patient with a brain tumor or hydrocephalus), residents will use the AI tools to analyze the MRI and compare the results with manual interpretations. They will be encouraged to explore how AI models help identify brain anomalies and expedite urgent case reviews.</li>
+                  <li><strong>Hands-on Training:</strong> Residents will perform MRI reviews using <strong>Aidoc</strong> and <strong>Zebra Medical Vision</strong> and <strong>Qure.ai</strong> to detect abnormalities such as brain tumors, mass effects, or structural issues. They will document how AI flagged key findings compared to manual analysis.</li>
                   <li><strong>Objective:</strong> Understand the role of AI in improving speed and accuracy in MRI interpretation, reducing human error, and prioritizing critical cases.</li>
                 </ul>
               </li>
@@ -49,8 +49,8 @@ function About() {
               <li><strong>Morning (Clinics):</strong> Genetics clinics as planned.</li>
               <li><strong>Afternoon (Case Identification and AI Integration):</strong>
                 <ul>
-                  <li><strong>AI Tool Integration:</strong> Residents will be introduced to AI tools like <a href="#deepvariant-link">DeepVariant</a>, <a href="#fabric-genomics-link">Fabric Genomics</a>, and <a href="#illumina-link">Illumina DRAGEN Bio-IT Platform</a>. They will use these tools to assist in analyzing genomic data for patients with rare diseases or genetic syndromes seen in the clinic. AI tools can automate variant calling and classification, aiding in diagnosis.</li>
-                  <li><strong>Hands-on Training:</strong> Residents will be given patient genetic data (from clinic cases) to run through platforms like DeepVariant and Fabric Genomics. They will identify potential variants and understand how these tools support diagnosing rare conditions.</li>
+                  <li><strong>AI Tool Integration:</strong> Residents will be introduced to AI tools like <strong>DeepVariant</strong>, <strong>Fabric Genomics</strong>, and <strong>Illumina DRAGEN Bio-IT Platform</strong>. They will use these tools to assist in analyzing genomic data for patients with rare diseases or genetic syndromes seen in the clinic. AI tools can automate variant calling and classification, aiding in diagnosis.</li>
+                  <li><strong>Hands-on Training:</strong> Residents will be given patient genetic data (from clinic cases) to run through platforms like <strong>DeepVariant</strong> and <strong>Fabric Genomics</strong>. They will identify potential variants and understand how these tools support diagnosing rare conditions.</li>
                   <li><strong>Objective:</strong> Learn how AI streamlines genomic evaluation, accelerates variant interpretation, and improves the accuracy of diagnosing genetic disorders. Residents will compare traditional manual sequencing interpretations with AI-augmented approaches.</li>
                 </ul>
               </li>
@@ -67,10 +67,10 @@ function About() {
               <li><strong>Morning (Clinics):</strong> Neurology and neuroradiology clinics as planned.</li>
               <li><strong>Afternoon (Case Identification and AI Integration):</strong>
                 <ul>
-                  <li><strong>EEG AI Tools:</strong> Introduce residents to <a href="#persyst-link">Persyst EEG Analysis Software</a> and <a href="#epilog-link">Epilog</a> to help analyze EEG data. When seeing a neurology case (e.g., epilepsy or abnormal brain activity), residents will upload EEG recordings into the AI tool, which can detect seizures, spikes, and abnormal activity more efficiently.</li>
-                  <li><strong>Hands-on Training:</strong> Residents will run EEG recordings through Persyst, then evaluate how AI-automated results compare to their manual interpretations.</li>
+                  <li><strong>EEG AI Tools:</strong> Introduce residents to <strong>Persyst EEG Analysis Software</strong> and <strong>Epilog</strong> to help analyze EEG data. When seeing a neurology case (e.g., epilepsy or abnormal brain activity), residents will upload EEG recordings into the AI tool, which can detect seizures, spikes, and abnormal activity more efficiently.</li>
+                  <li><strong>Hands-on Training:</strong> Residents will run EEG recordings through <strong>Persyst</strong>, then evaluate how AI-automated results compare to their manual interpretations.</li>
                   <li><strong>Objective:</strong> Understand the potential of AI in real-time EEG interpretation and how it enhances seizure detection and spike analysis, especially in long-term monitoring or during video EEG evaluations.</li>
-                  <li><strong>MRI AI Tools:</strong> Continue using AI tools from Week 1 (Aidoc and <a href="#qure-link">Qure.ai</a>) for neuroradiology cases to identify neurological abnormalities on MRI scans (e.g., stroke, multiple sclerosis lesions, or structural brain abnormalities).</li>
+                  <li><strong>MRI AI Tools:</strong> Continue using AI tools from Week 1 (Aidoc and Qure.ai) for neuroradiology cases to identify neurological abnormalities on MRI scans (e.g., stroke, multiple sclerosis lesions, or structural brain abnormalities).</li>
                   <li><strong>Hands-on Training:</strong> Focus on applying Qure.ai in neuroradiology, comparing AI-driven interpretations of MRIs with resident’s own evaluations.</li>
                 </ul>
               </li>
@@ -114,12 +114,12 @@ function About() {
         </Box>
 
         {/* Grid Section */}
-        <Typography id="link-spot" variant="h4" align="center" color="text.primary" sx={{ mt: 6, mb: 4 }}>
+        <Typography id="#link-spot" variant="h4" align="center" color="text.primary" sx={{ mt: 6, mb: 4 }}>
           Learn About the Technologies We Like
         </Typography>
         <Grid container spacing={4}>
           {gridItems.map((item, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Grid item xs={12} sm={6} md={4} key={index} id={item.title.toLowerCase().replace(/\s+/g, '-')}>
               <Paper sx={{
                 padding: 2,
                 textAlign: 'center',
@@ -129,7 +129,7 @@ function About() {
                 flexDirection: 'column',
                 justifyContent: 'space-between',
               }}>
-                <Typography variant="h6" component="h2" gutterBottom id={`${item.title.toLowerCase().replace(/\s+/g, '-')}-link`}>
+                <Typography variant="h6" component="h2" gutterBottom>
                   {item.title}
                 </Typography>
                 <Typography paragraph>
