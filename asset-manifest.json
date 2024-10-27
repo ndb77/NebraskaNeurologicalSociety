@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ndb77/NebraskaNeurologicalSociety.git/static/css/main.31d6cfe0.css",
+    "main.js": "/ndb77/NebraskaNeurologicalSociety.git/static/js/main.9b376d96.js",
+    "static/media/space-7273891_1280.jpg": "/ndb77/NebraskaNeurologicalSociety.git/static/media/space-7273891_1280.afb46f1780d303896358.jpg",
+    "static/media/NeuroAI curriculum_10_2_24.pdf": "/ndb77/NebraskaNeurologicalSociety.git/static/media/NeuroAI curriculum_10_2_24.6d92da619b51a6299ab3.pdf",
+    "index.html": "/ndb77/NebraskaNeurologicalSociety.git/index.html",
+    "main.9b376d96.js.map": "/ndb77/NebraskaNeurologicalSociety.git/static/js/main.9b376d96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.9b376d96.js"
+  ]
+}
