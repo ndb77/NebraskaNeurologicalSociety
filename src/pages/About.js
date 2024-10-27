@@ -165,7 +165,7 @@ const gridItems = [
   {
     title: "Zebra Medical Vision",
     description: "Provides technology for patient identity management, mobile health devices, and business intelligence tools that assist healthcare organizations in tracking patient data, improving workflow, and supporting decision-making. ​",
-    link: "https://example.com/personalized-curriculum"
+    link: "https://www.zebra.com/us/en/solutions/industry/healthcare.html"
   },
   {
     title: "Qure.ai",
@@ -180,7 +180,7 @@ const gridItems = [
   {
     title: "Fabric Genomics",
     description: "A gene sequencing company that uses AI to enhance the reliability and speed of the rare diseases panels they offer, among many other gene sequencing services.",
-    link: "https://example.com/advanced-diagnostics"
+    link: "https://fabricgenomics.com/products/applications/"
   },
   {
     title: "Illumina DRAGEN Bio-IT Platform",
