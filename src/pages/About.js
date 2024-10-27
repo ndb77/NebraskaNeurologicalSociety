@@ -2,6 +2,14 @@ import React from 'react';
 import { Container, Typography, Box, Grid, Paper, Divider, Button } from '@mui/material';
 
 function About() {
+  // Function to handle scrolling to a specific grid item
+  const scrollToGridItem = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Box sx={{ flexGrow: 1, bgcolor: 'background.default', pt: 8, pb: 6 }}>
       <Container maxWidth="lg">
@@ -31,8 +39,8 @@ function About() {
               <li><strong>Morning (Clinics):</strong> Neurosurgery clinic exposure as planned.</li>
               <li><strong>Afternoon (Case Identification and AI Integration):</strong>
                 <ul>
-                  <li><strong>AI Tool Integration:</strong> Introduce residents to AI tools such as <strong>Aidoc</strong> and <strong>Zebra Medical Vision</strong> for MRI analysis. After selecting a case in the clinic that involves MRI imaging (e.g., a patient with a brain tumor or hydrocephalus), residents will use the AI tools to analyze the MRI and compare the results with manual interpretations. They will be encouraged to explore how AI models help identify brain anomalies and expedite urgent case reviews.</li>
-                  <li><strong>Hands-on Training:</strong> Residents will perform MRI reviews using <strong>Aidoc</strong> and <strong>Zebra Medical Vision</strong> and <strong>Qure.ai</strong> to detect abnormalities such as brain tumors, mass effects, or structural issues. They will document how AI flagged key findings compared to manual analysis.</li>
+                  <li><strong>AI Tool Integration:</strong> Introduce residents to <strong onClick={() => scrollToGridItem('aidoc')} style={{ cursor: 'pointer', color: 'blue' }}>AiDoc</strong> and <strong onClick={() => scrollToGridItem('zebra-medical-vision')} style={{ cursor: 'pointer', color: 'blue' }}>Zebra Medical Vision</strong> for MRI analysis. After selecting a case in the clinic that involves MRI imaging (e.g., a patient with a brain tumor or hydrocephalus), residents will use the AI tools to analyze the MRI and compare the results with manual interpretations. They will be encouraged to explore how AI models help identify brain anomalies and expedite urgent case reviews.</li>
+                  <li><strong>Hands-on Training:</strong> Residents will perform MRI reviews using <strong onClick={() => scrollToGridItem('aidoc')} style={{ cursor: 'pointer', color: 'blue' }}>Aidoc</strong> and <strong onClick={() => scrollToGridItem('zebra-medical-vision')} style={{ cursor: 'pointer', color: 'blue' }}>Zebra Medical Vision</strong> and <strong onClick={() => scrollToGridItem('qure-ai')} style={{ cursor: 'pointer', color: 'blue' }}>Qure.ai</strong> to detect abnormalities such as brain tumors, mass effects, or structural issues. They will document how AI flagged key findings compared to manual analysis.</li>
                   <li><strong>Objective:</strong> Understand the role of AI in improving speed and accuracy in MRI interpretation, reducing human error, and prioritizing critical cases.</li>
                 </ul>
               </li>
@@ -49,8 +57,8 @@ function About() {
               <li><strong>Morning (Clinics):</strong> Genetics clinics as planned.</li>
               <li><strong>Afternoon (Case Identification and AI Integration):</strong>
                 <ul>
-                  <li><strong>AI Tool Integration:</strong> Residents will be introduced to AI tools like <strong>DeepVariant</strong>, <strong>Fabric Genomics</strong>, and <strong>Illumina DRAGEN Bio-IT Platform</strong>. They will use these tools to assist in analyzing genomic data for patients with rare diseases or genetic syndromes seen in the clinic. AI tools can automate variant calling and classification, aiding in diagnosis.</li>
-                  <li><strong>Hands-on Training:</strong> Residents will be given patient genetic data (from clinic cases) to run through platforms like <strong>DeepVariant</strong> and <strong>Fabric Genomics</strong>. They will identify potential variants and understand how these tools support diagnosing rare conditions.</li>
+                  <li><strong>AI Tool Integration:</strong> Residents will be introduced to AI tools like <strong onClick={() => scrollToGridItem('deepvariant')} style={{ cursor: 'pointer', color: 'blue' }}>DeepVariant</strong>, <strong onClick={() => scrollToGridItem('fabric-genomics')} style={{ cursor: 'pointer', color: 'blue' }}>Fabric Genomics</strong>, and <strong onClick={() => scrollToGridItem('illumina-draggen-bio-it-platform')} style={{ cursor: 'pointer', color: 'blue' }}>Illumina DRAGEN Bio-IT Platform</strong>. They will use these tools to assist in analyzing genomic data for patients with rare diseases or genetic syndromes seen in the clinic. AI tools can automate variant calling and classification, aiding in diagnosis.</li>
+                  <li><strong>Hands-on Training:</strong> Residents will be given patient genetic data (from clinic cases) to run through platforms like <strong onClick={() => scrollToGridItem('deepvariant')} style={{ cursor: 'pointer', color: 'blue' }}>DeepVariant</strong> and <strong onClick={() => scrollToGridItem('fabric-genomics')} style={{ cursor: 'pointer', color: 'blue' }}>Fabric Genomics</strong>. They will identify potential variants and understand how these tools support diagnosing rare conditions.</li>
                   <li><strong>Objective:</strong> Learn how AI streamlines genomic evaluation, accelerates variant interpretation, and improves the accuracy of diagnosing genetic disorders. Residents will compare traditional manual sequencing interpretations with AI-augmented approaches.</li>
                 </ul>
               </li>
@@ -67,11 +75,11 @@ function About() {
               <li><strong>Morning (Clinics):</strong> Neurology and neuroradiology clinics as planned.</li>
               <li><strong>Afternoon (Case Identification and AI Integration):</strong>
                 <ul>
-                  <li><strong>EEG AI Tools:</strong> Introduce residents to <strong>Persyst EEG Analysis Software</strong> and <strong>Epilog</strong> to help analyze EEG data. When seeing a neurology case (e.g., epilepsy or abnormal brain activity), residents will upload EEG recordings into the AI tool, which can detect seizures, spikes, and abnormal activity more efficiently.</li>
-                  <li><strong>Hands-on Training:</strong> Residents will run EEG recordings through <strong>Persyst</strong>, then evaluate how AI-automated results compare to their manual interpretations.</li>
+                  <li><strong>EEG AI Tools:</strong> Introduce residents to <strong onClick={() => scrollToGridItem('persyst-eeg-analysis-software')} style={{ cursor: 'pointer', color: 'blue' }}>Persyst EEG Analysis Software</strong> and <strong onClick={() => scrollToGridItem('epilog')} style={{ cursor: 'pointer', color: 'blue' }}>Epilog</strong> to help analyze EEG data. When seeing a neurology case (e.g., epilepsy or abnormal brain activity), residents will upload EEG recordings into the AI tool, which can detect seizures, spikes, and abnormal activity more efficiently.</li>
+                  <li><strong>Hands-on Training:</strong> Residents will run EEG recordings through <strong onClick={() => scrollToGridItem('persyst')} style={{ cursor: 'pointer', color: 'blue' }}>Persyst</strong>, then evaluate how AI-automated results compare to their manual interpretations.</li>
                   <li><strong>Objective:</strong> Understand the potential of AI in real-time EEG interpretation and how it enhances seizure detection and spike analysis, especially in long-term monitoring or during video EEG evaluations.</li>
-                  <li><strong>MRI AI Tools:</strong> Continue using AI tools from Week 1 (Aidoc and Qure.ai) for neuroradiology cases to identify neurological abnormalities on MRI scans (e.g., stroke, multiple sclerosis lesions, or structural brain abnormalities).</li>
-                  <li><strong>Hands-on Training:</strong> Focus on applying Qure.ai in neuroradiology, comparing AI-driven interpretations of MRIs with resident’s own evaluations.</li>
+                  <li><strong>MRI AI Tools:</strong> Continue using AI tools from Week 1 (<strong onClick={() => scrollToGridItem('aidoc')} style={{ cursor: 'pointer', color: 'blue' }}>Aidoc</strong> and <strong onClick={() => scrollToGridItem('qure-ai')} style={{ cursor: 'pointer', color: 'blue' }}>Qure.ai</strong>) for neuroradiology cases to identify neurological abnormalities on MRI scans (e.g., stroke, multiple sclerosis lesions, or structural brain abnormalities).</li>
+                  <li><strong>Hands-on Training:</strong> Focus on applying <strong onClick={() => scrollToGridItem('qure-ai')} style={{ cursor: 'pointer', color: 'blue' }}>Qure.ai</strong> in neuroradiology, comparing AI-driven interpretations of MRIs with resident’s own evaluations.</li>
                 </ul>
               </li>
             </ul>
@@ -90,10 +98,10 @@ function About() {
                   <li><strong>Case Pooling:</strong> Residents will choose 4 representative cases that demonstrate the integration of AI tools across EEG, MRI, and genomic evaluation. They will explain the differences between AI-augmented and traditional clinical practice, showcasing the specific tools they used.</li>
                   <li><strong>Pediatric Grand Rounds Presentation:</strong> The presentation will highlight:
                     <ol>
-                      <li>EEG Case: How Persyst or Epilog assisted in identifying seizure activity, improving diagnosis and management in epilepsy.</li>
-                      <li>MRI Case in Neurosurgery/Neuroradiology: How Aidoc flagged an urgent brain lesion, leading to quicker surgical intervention.</li>
-                      <li>Genomic Case: How DeepVariant or Fabric Genomics accelerated the diagnosis of a genetic disorder in a pediatric patient, improving the treatment plan.</li>
-                      <li>Neurology Case: How AI-enhanced MRI readings with Qure.ai helped identify subtle signs of early multiple sclerosis or stroke.</li>
+                      <li>EEG Case: How <strong onClick={() => scrollToGridItem('persyst')} style={{ cursor: 'pointer', color: 'blue' }}>Persyst</strong> or <strong onClick={() => scrollToGridItem('epilog')} style={{ cursor: 'pointer', color: 'blue' }}>Epilog</strong> assisted in identifying seizure activity, improving diagnosis and management in epilepsy.</li>
+                      <li>MRI Case in Neurosurgery/Neuroradiology: How <strong onClick={() => scrollToGridItem('aidoc')} style={{ cursor: 'pointer', color: 'blue' }}>Aidoc</strong> flagged an urgent brain lesion, leading to quicker surgical intervention.</li>
+                      <li>Genomic Case: How <strong onClick={() => scrollToGridItem('deepvariant')} style={{ cursor: 'pointer', color: 'blue' }}>DeepVariant</strong> or <strong onClick={() => scrollToGridItem('fabric-genomics')} style={{ cursor: 'pointer', color: 'blue' }}>Fabric Genomics</strong> accelerated the diagnosis of a genetic disorder in a pediatric patient, improving the treatment plan.</li>
+                      <li>Neurology Case: How AI-enhanced MRI readings with <strong onClick={() => scrollToGridItem('qure-ai')} style={{ cursor: 'pointer', color: 'blue' }}>Qure.ai</strong> helped identify subtle signs of early multiple sclerosis or stroke.</li>
                     </ol>
                   </li>
                   <li><strong>Objective:</strong> By presenting these cases, residents will demonstrate their ability to integrate AI tools into clinical workflows, highlight improved diagnostic accuracy, and reflect on the limitations and ethical considerations of AI in patient care.</li>
@@ -114,7 +122,7 @@ function About() {
         </Box>
 
         {/* Grid Section */}
-        <Typography id="#link-spot" variant="h4" align="center" color="text.primary" sx={{ mt: 6, mb: 4 }}>
+        <Typography id="bottom-section" variant="h4" align="center" color="text.primary" sx={{ mt: 6, mb: 4 }}>
           Learn About the Technologies We Like
         </Typography>
         <Grid container spacing={4}>
