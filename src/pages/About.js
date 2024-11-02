@@ -99,7 +99,7 @@ function About() {
                   <li><strong>Pediatric Grand Rounds Presentation:</strong> The presentation will highlight:
                     <ol>
                       <li>EEG Case: How <strong onClick={() => scrollToGridItem('persyst')} style={{ cursor: 'pointer', color: 'blue' }}>Persyst</strong> or <strong onClick={() => scrollToGridItem('epilog')} style={{ cursor: 'pointer', color: 'blue' }}>Epilog</strong> assisted in identifying seizure activity, improving diagnosis and management in epilepsy.</li>
-                      <li>MRI Case in Neurosurgery/Neuroradiology: How <strong onClick={() => scrollToGridItem('aidoc')} style={{ cursor: 'pointer', color: 'blue' }}>Aidoc</strong> flagged an urgent brain lesion, leading to quicker surgical intervention.</li>
+                      <li>MRI Case in Neurosurgery and Neuroradiology: How <strong onClick={() => scrollToGridItem('aidoc')} style={{ cursor: 'pointer', color: 'blue' }}>Aidoc</strong> flagged an urgent brain lesion, leading to quicker surgical intervention.</li>
                       <li>Genomic Case: How <strong onClick={() => scrollToGridItem('deepvariant')} style={{ cursor: 'pointer', color: 'blue' }}>DeepVariant</strong> or <strong onClick={() => scrollToGridItem('fabric-genomics')} style={{ cursor: 'pointer', color: 'blue' }}>Fabric Genomics</strong> accelerated the diagnosis of a genetic disorder in a pediatric patient, improving the treatment plan.</li>
                       <li>Neurology Case: How AI-enhanced MRI readings with <strong onClick={() => scrollToGridItem('qure-ai')} style={{ cursor: 'pointer', color: 'blue' }}>Qure.ai</strong> helped identify subtle signs of early multiple sclerosis or stroke.</li>
                     </ol>
@@ -171,9 +171,9 @@ const gridItems = [
     link: "https://www.aidoc.com/solutions/neuro/"
   },
   {
-    title: "Zebra Medical Vision",
-    description: "Provides technology for patient identity management, mobile health devices, and business intelligence tools that assist healthcare organizations in tracking patient data, improving workflow, and supporting decision-making. ​",
-    link: "https://www.zebra.com/us/en/solutions/industry/healthcare.html"
+    title: "Zebra Medical Vision(Now part of Nano-X Imaging) ",
+    description: "Provides an AI suite of algorithms that augments CT readings to provide early detection and treatment. ",
+    link: "https://www.nanox.vision/#nanox-ecosystem"
   },
   {
     title: "Qure.ai",
@@ -203,7 +203,7 @@ const gridItems = [
   {
     title: "Epilog",
     description: "A software for EEG analysis that uses AI to help with the detection of seizures and other neurological disorders.",
-    link: "https://www.epilog.com/"
+    link: "https://www.epilog.care/"
   },
 ];
 
